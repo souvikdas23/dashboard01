@@ -1,0 +1,19 @@
+<div class="nav-item nav-item-selected">
+	<div class="nav_rating">
+		<p>4.5</p>	
+	</div>
+	<div class="nav_text">
+		<p>OVERALL SENTIMENTS</p>	
+	</div>
+</div>
+
+{{#each json}}
+<div class="nav-item">
+	<div class="nav_rating">
+		<p>{{this.source_rating}}</p>	
+	</div>
+	<div class="nav_text">
+		<p>{{this.source_name}} SENTIMENTS</p>	
+	</div>	
+</div>
+{{/each}}

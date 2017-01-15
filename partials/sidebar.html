@@ -1,0 +1,14 @@
+<div class="select-items select-selected" id="select-0">
+	<p>All Categories</p>
+	<div class="side-rating">
+			7.6
+	</div>
+</div>
+{{#each common}}
+	<div class="select-items" id="{{counter @index}}">
+		<p>{{this.name}}</p>
+		<div class="side-rating">
+			{{this.avg_rating}}
+		</div>
+	</div>
+{{/each}}

@@ -1,0 +1,40 @@
+{{#each recent_postive}}
+	<div class="review-generator positive">
+		<div class="emoticons">
+			<i class="em em-smile" style="height: 3em;width: 3em;"></i>
+		</div>
+
+		<div class="review-textarea">
+			<div class="brand">
+				<div class="brand-logo">
+					<div class="image"><img src="{{this.source_favicon}}"></div>
+					<p>{{this.source_name}}</p>
+				</div>
+				<div class="timing"></div>
+			</div>
+			<div class="review-text">
+				{{{this.sample}}}
+			</div>
+		</div>
+	</div>
+{{/each}}
+{{#each recent_negative}}
+	<div class="review-generator negative">
+		<div class="emoticons">
+			<i class="em em-rage" style="height: 3em;width: 3em;"></i>
+		</div>
+
+		<div class="review-textarea">
+			<div class="brand">
+				<div class="brand-logo">
+					<div class="image"><img src="{{this.source_favicon}}"></div>
+					<p>{{this.source_name}}</p>
+				</div>
+				<div class="timing"></div>
+			</div>
+			<div class="review-text">
+				{{{this.sample}}}
+			</div>
+		</div>
+	</div>
+{{/each}}

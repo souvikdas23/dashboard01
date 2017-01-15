@@ -1,0 +1,304 @@
+@import "bootstrap-sass-3.3.7/assets/stylesheets/bootstrap";
+@import "font-awesome/font-awesome";
+@import "reset";
+@import "variables";
+@import "mixins";
+
+header{
+	width: 100%;
+	height: 60px;
+	background-color: #0b6090;
+	border-bottom: solid #ff0000;
+	position: fixed;
+	z-index: 20;
+	img{
+		float: left;
+	}
+
+	
+
+	.top_link{
+		float: left;
+		width: 50%;
+		margin-top: 20px;
+		height: 20px;
+		border-left: 2px solid #c0c4c6;
+	
+		margin-left: 20px;
+		p{
+			float: left;
+			color:white;
+			font-size: 15px;
+			font-weight: bold;
+			margin-left: 20px;
+		}
+	}
+}
+
+.navigation{
+	width: 100%;
+	display: block;
+	position: relative;
+	height: 100px;
+	margin-top: 90px;
+	background-color: white;
+	.nav-item{
+		width: 200px;
+		height: 100%;
+		border-right: solid #ddd;
+		border-width: 1px;	
+		float: left;
+		.nav_text{
+			float: left;
+			width: 50%;
+			margin-top: 30px;
+			padding-left: 8px;
+			font-weight: bold;
+			font-size: 12px;
+			line-height: 1.1em; 
+			text-transform: uppercase;
+		}
+		.nav_rating{
+			float: left;
+			margin-top: 20px;
+			margin-left: 20px;
+			font-size: 30px;
+			color: #949090;	
+		}
+		&:hover{
+			border-bottom: solid #ff0000;
+    		border-width: 2.5px;
+    		cursor: pointer;
+		}
+	}
+	.nav-item-selected{
+		border-bottom: solid #ff0000;
+    	border-width: 2.5px;
+	}
+}
+#myChart{
+	border-top: dashed 1px #a7abad;
+	padding-top: 10px;
+	padding-bottom: 40px;
+	font-family: "Century Gothic";
+	font-size: 15px;
+}
+#myPieChart{
+	margin-top: 10%;
+}
+.chart-sec{
+	width: 100%;
+	display: block;
+	position: relative;
+	height: 320px;
+	margin-top: 20px;
+	background-color: white;
+	.chart{
+		float: left;
+		width: 70%;
+		height: 100%;
+		border-right: solid #ddd;
+		border-width: 1px;
+		.chart-action{
+			//margin-top: 7.5%;
+			width: 100%;
+			height: 85%;
+			position: relative;
+		}
+		.chart-text{
+			width: 100%;
+		}
+		p{
+			padding-top: 20px;
+			padding-left: 20px;
+			padding-bottom: 20px;
+			display: inline-block;
+		}
+		select{
+			width: 130px;
+			height: 25px;
+			margin-top: 20px;
+			margin-right: 40px;
+			float: right;
+			font-weight: bold;
+			font-size: 12px;
+			-webkit-appearance: none;
+    		-moz-appearance: none;
+    		//border: none;
+    		border-radius: 2px;
+    		padding: 0px 10px 0px 7px;
+			background: transparent url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png") no-repeat right 10px center;
+			background-size: 8px 8px;
+		}
+	}
+	.pie-chart{
+		margin-left: 70%;
+		height: 100%;
+		p{
+			padding-top: 20px;
+			padding-left: 20px;
+			//padding-bottom: 20px;
+			display: inline-block;
+		}
+	}
+	
+}
+
+.review-sec{
+	width: 100%;
+	display: block;
+	position: relative;
+	height: 1040px;
+	margin-top: 20px;
+	background-color: white;
+	.select-sec{
+		float: left;
+		width: 30%;
+		height: 100%;
+		border-right: solid #ddd;
+		border-width: 1px;
+		p{
+			float: left;
+			padding-top: 14px;
+			padding-left: 20px;
+			font-size: 16px;
+			font-weight: bold;
+			width: 80%;
+		}
+		.side-rating{
+			padding-top: 14px;
+		    padding-left: 50%;
+		    margin-left: 37%;
+		    font-size: 15px;
+		    font-weight: bold;
+		}
+	}
+
+	.select-items{
+		width: 100%;
+		height: 50px;
+		border-bottom: solid #ddd;
+		border-width: 1px; 
+		&:hover{
+			background-color: #0564a5; 
+			color: white;
+			border-left: solid #ff0000;
+			cursor: pointer;
+		}
+	}
+
+	.select-selected{
+		background-color: #0564a5; 
+		color: white;
+		border-left: solid #ff0000;
+		//border-width: 5px ;
+	}
+
+	
+
+	.review-main{
+		margin-left: 30%;
+		height: 100%;
+	}
+
+	.review-header{
+		width: 100%;
+		height: 50px;
+		background-color: #f7f8f9;
+	}
+
+	.review-header-items{
+		float: left;
+		height: 100%;
+		width: 150px;
+		
+		p{
+			text-align: center;
+			padding-top: 14px;
+			font-size: 14px;
+		}
+		&:hover{
+			border-bottom: solid #ff0000;
+			border-width: 2.5px;
+			cursor: pointer;
+		}
+	}
+
+	.review-header-items-selected{
+		border-bottom: solid #ff0000;
+		border-width: 2.5px;
+		font-weight: bold;
+	}
+
+	.review-main-main{
+		overflow: auto;
+		padding-left: 40px;
+		width: 100%;
+		//height: 100%;
+		max-height: 980px;
+
+		.review-generator{
+			width: 100%;
+			min-height: 250px;
+			border-bottom: solid #ddd;
+			border-width: 1px;
+			position: relative;
+			.emoticons{
+				/* background-color: green; */	
+				margin-top: 10px;
+				margin-left: 10px;
+				padding-left: 5px;
+				width: 50px;
+				height: 100%;
+				float: left;
+			}
+			.review-textarea{
+				.brand{
+					float: left;
+					margin-top: 20px; 
+					padding-left: 20px;
+					.brand-logo{
+						border: 2px solid #eae9e9;
+						min-width: 70px;
+						height: 25px;
+						background-color: #eae9e9;
+						border-radius: 5px;
+						.image{
+							float: left;
+							margin-left: 5px;
+							width: 15px;
+							height: 15px;
+							img{
+								width: 100%;
+							}
+						}						
+						p{
+							float: left;
+							padding-left: 6px;
+						    padding-top: 3px;
+						    font-size: 12px;
+						}
+
+					}
+				}
+				.review-text{
+					/* margin-top: 40px; */
+					float: left;
+					padding-left: 20px;
+					margin-left: 60px;
+					padding-bottom: 20px;
+				}
+			}
+		}
+
+	}
+}
+
+
+
+
+
+
+
+ 
+
